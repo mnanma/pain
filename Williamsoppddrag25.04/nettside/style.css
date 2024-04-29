@@ -6,19 +6,17 @@
     transition: all 0.5s ease;
 }
 
-
-
 body{
     font-family: sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: #fff
+    color: #fff;
 }
 
 body{
-    background-image: linear-gradient(to bottom right, rgba(79,51,176,1),rgba(210,53,165));
+    background-image: linear-gradient(to bottom right, rgba(79,51,176,1), rgba(210,53,165));
 }
 
 .container{
@@ -29,14 +27,13 @@ body{
 }
 
 .calculator{
-    position: relativ;
+    position: relative;
     height: auto;
     width: auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 30px #000;
 }
-
 
 .theme-toggler{
     position: absolute;
@@ -47,13 +44,8 @@ body{
     z-index: 1;
 }
 
-
 .theme-toggler.active{
-    color: #333
-}
-
-.theme-toggler.active::before{
-    background-color: #fff;
+    color: #333;
 }
 
 .theme-toggler.active::before{
@@ -62,6 +54,7 @@ body{
     width: 30px;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: #333;
@@ -77,12 +70,14 @@ body{
     align-items: flex-end;
     justify-content: flex-end;
     font-size: 30px;
-
-    #display::.webkit-scrollbar{
-    display: block
-    height: 3px
+    margin-bottom: 20px;
+    overflow-x: scroll;
 }
 
+#display::-webkit-scrollbar{
+    display: block;
+    height: 3px;
+}
 
 button{
     height: 60px;
@@ -157,11 +152,6 @@ button#equal{
 .calculator.dark button.btn-equal{
     background-color: #223323;
     color: #ffffff;
-}
-
-
-    margin-bottom: 20px;
-    overflow-x: scroll;
 }
 
 
